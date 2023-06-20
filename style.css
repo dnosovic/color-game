@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: montserrat;
+    background: #232323;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 0;
+    background: steelblue;
+}
+
+h1 #colorDisplay {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#stripe {
+    background: white;
+    height: 30px;
+    text-align: center;
+}
+
+#stripe button {
+    border: 0;
+    background: none;
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 10px;
+    padding: 0 10px;
+    height: 100%;
+}
+
+#stripe button:hover {
+    background: steelblue;
+    color: white;
+    cursor: pointer;
+}
+
+#stripe .selected {
+    background: steelblue;
+    color: white;
+}
+
+#squares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#squares .square {
+    width: 180px;
+    height: 180px;
+    background: steelblue;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+#squares .square:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
